@@ -83,7 +83,7 @@
 
                             // Create div element for the message content
                             const contentDiv = document.createElement('div');
-                            contentDiv.textContent = msg.content;
+                            contentDiv.innerHTML = msg.content; // Use innerHTML to treat msg.content as HTML
 
                             // Append title (h2) and content (div) to messages container
                             messagesContainer.appendChild(h2);
