@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor Victor Hugo - ATP1</title>
+
+    <!-- Bootstrap CSS via CDN link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-5">Seja bem-vindo.</h1>
+        <h3>Esta é a página da disciplina ATP1, do curso de bacharelado em Engenharia de Software (IFG/Inhumas).</h3>
+        <p>Here, you'll find information about Professor Victor Hugo.</p>
+
+        <!-- Container to hold the dynamically generated messages -->
+        <div id="messages-container" class="mt-4"></div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery via CDN links (optional, for Bootstrap components that require JS) -->
+    <!-- Note: Place these just before the closing </body> tag if you need them -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Function to fetch the JSON file and display messages
+        function displayMessages() {
+            fetch('/json/atp1-msgs.json')
+                .then(response => response.json())
+                .then(data => {
+                    const messagesContainer = document.getElementById('messages-container');
+
+                    // Loop through each message in the JSON file
+                    for (const msgKey in data) {
+                        if (data.hasOwnProperty(msgKey)) {
+                            const msg = data[msgKey];
+
+                            // Create h2 element for the message title
+                            const h2 = document.createElement('h2');
+                            h2.textContent = msg.title;
+
+                            // Create div element for the message content
+                            const contentDiv = document.createElement('div');
+                            contentDiv.textContent = msg.content;
+
+                            // Append title (h2) and content (div) to messages container
+                            messagesContainer.appendChild(h2);
+                            messagesContainer.appendChild(contentDiv);
+                        }
+                    }
+                })
+                .catch(error => console.error('Error fetching JSON:', error));
+        }
+
+        // Call the displayMessages function to fetch and display the messages
+        displayMessages();
+    </script>
+</body>
+
+</html>
+
