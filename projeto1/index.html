@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professor Victor Hugo - Contatos</title>
+    <title>Professor Victor Hugo - Projeto de Pesquisa e Inovação I</title>
 
     <!-- Bootstrap CSS via CDN link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -21,12 +21,6 @@
         .navbar-links {
             /* Add any custom styling for the navigation links here */
             /* For example, you can set color, font size, padding, etc. */
-        }
-        
-        /* Custom styles for the content */
-        .content-image {
-            max-width: 200px; /* Set the maximum width for the image */
-            height: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
@@ -56,33 +50,13 @@
     <hr class="dotted">
     <div class="container">
         <h1 class="mt-5">Seja bem-vindo.</h1>
-        <h3>--</h3>
+        <h3>Esta é a página da disciplina Projeto de Pesquisa e Inovação I, do curso de bacharelado em Engenharia de Software (IFG/Inhumas).</h3>
         
         <hr class="dotted">
         
 
         <!-- Container to hold the dynamically generated messages -->
-        <div id="messages-container" class="mt-4">
-        	<h3><a href="/atp1">Visite a página atualizada de ATP1</a></h3>
-        	<img src="/imgs/atp1.png" class="content-image" alt="QR code to ATP1">
-        	
-        	<hr class="dotted">
-        	
-        	<h3><a href="/rcsi">Visite a página atualizada de RCSI</a></h3>
-        	<img src="/imgs/rcsi.png" class="content-image" alt="QR code to RCSI">
-        	
-        	<hr class="dotted">
-        	
-        	<h3><a href="/projeto1">Visite a página atualizada de Projeto de Pesquisa e
-Inovação I</a></h3>
-        	<img src="/imgs/projeto1.png" class="content-image" alt="QR code to projeto de pesquisa e inovação I">
-        	
-        	<hr class="dotted">
-        	
-        	<h3><a href="/extensao1">Visite a página atualizada de Extensão Curricular I</a></h3>
-        	<img src="/imgs/extensao1.png" class="content-image" alt="QR code to Extensão Curricular I">
-        </div>
-        
+        <div id="messages-container" class="mt-4"></div>
     </div>
 
     <!-- Bootstrap JS and jQuery via CDN links (optional, for Bootstrap components that require JS) -->
@@ -90,7 +64,39 @@ Inovação I</a></h3>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    
+    <script>
+        // Function to fetch the JSON file and display messages
+        function displayMessages() {
+            fetch('/json/pesquisa1-msgs.json')
+                .then(response => response.json())
+                .then(data => {
+                    const messagesContainer = document.getElementById('messages-container');
+
+                    // Loop through each message in the JSON file
+                    for (const msgKey in data) {
+                        if (data.hasOwnProperty(msgKey)) {
+                            const msg = data[msgKey];
+
+                            // Create h2 element for the message title
+                            const h2 = document.createElement('h2');
+                            h2.textContent = msg.title;
+
+                            // Create div element for the message content
+                            const contentDiv = document.createElement('div');
+                            contentDiv.textContent = msg.content;
+
+                            // Append title (h2) and content (div) to messages container
+                            messagesContainer.appendChild(h2);
+                            messagesContainer.appendChild(contentDiv);
+                        }
+                    }
+                })
+                .catch(error => console.error('Error fetching JSON:', error));
+        }
+
+        // Call the displayMessages function to fetch and display the messages
+        displayMessages();
+    </script>
 </body>
 
 </html>
