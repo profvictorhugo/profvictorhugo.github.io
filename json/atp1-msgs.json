@@ -1,6 +1,6 @@
 {
    "msg1":{
-      "title":"informe 1",
-      "content":"conteúdo"
+      "title":"Informe 1",
+      "content":"<p>Cadastre-se no URI: <a href='https://www.beecrowd.com.br/judge/pt/login'>Aqui!</a></p><a href='https://www.beecrowd.com.br/judge/pt/users/university/ifg-geral'><p>Ps.: a associação ao IFG é obrigatória!!</p></a>"
    }
 }
