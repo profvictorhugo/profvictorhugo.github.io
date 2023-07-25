@@ -4,22 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professor Victor Hugo</title>
+    <title>Professor Victor Hugo - Contatos</title>
 
     <!-- Bootstrap CSS via CDN link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom styles for the header */
+        .header-logo {
+            color: #008000; /* Green color */
+            font-family: "Arial", sans-serif; /* Replace with your chosen font-family */
+            font-size: 36px; /* Adjust font size as needed */
+            font-weight: bold; /* Make the logo text bold */
+        }
+
+        .navbar-links {
+            /* Add any custom styling for the navigation links here */
+            /* For example, you can set color, font size, padding, etc. */
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side: Logo -->
+                <div class="col">
+                    <span class="header-logo">pvh();</span>
+                </div>
+
+                <!-- Right Side: Navigation Bar -->
+                <div class="col text-right">
+                    <nav class="navbar-links">
+                        <a href="/">Home</a>
+                        <a href="/sobre">Sobre</a>
+                        <a href="/contato">Contato</a>
+                        <!-- Add more links as needed -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr class="dotted">
     <div class="container">
-        <h1 class="mt-5">Welcome to my page</h1>
-        <p>Here, you'll find information about Professor Victor Hugo.</p>
+        <h1 class="mt-5">Seja bem-vindo.</h1>
+        <h3>--</h3>
+        
+        <hr class="dotted">
+        
+
+        <!-- Container to hold the dynamically generated messages -->
+        <div id="messages-container" class="mt-4">
+        	<h3><a href="/atp1">Visite a página atualizada de ATP1</a></h3>
+        	<img src="/imgs/atp1.png" alt="QR code to ATP1">
+        </div>
     </div>
 
     <!-- Bootstrap JS and jQuery via CDN links (optional, for Bootstrap components that require JS) -->
     <!-- Note: Place these just before the closing </body> tag if you need them -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
 </body>
 
 </html>
