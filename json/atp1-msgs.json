@@ -1,10 +1,10 @@
 {
    "msg1":{
-      "title":"Informe 1 - (01/08/2023)",
-      "content":"<p>Cadastre-se no URI: <a href='https://www.beecrowd.com.br/judge/pt/login'>Aqui!</a></p><a href='https://www.beecrowd.com.br/judge/pt/users/university/ifg-geral'><p>Obs 1.: a associação ao IFG é obrigatória!!</p></a><p>Obs 2.: peça ao professor os dados da disciplina no URI.</p>"
+      "title":"Informe 2 - (01/08/2023)",
+      "content":"<p>Cadastre-se no URI: <a href='https://www.beecrowd.com.br/judge/pt/login'>Aqui!</a></p><a href='https://www.beecrowd.com.br/judge/pt/users/university/ifg-geral'><p>Obs 1.: a associação ao IFG é obrigatória!!</p></a><p>Obs 2.: peça ao professor os dados da disciplina no URI.</p><hr class='dotted'>"
    },
    "msg2":{
-      "title":"Informe 2 - (01/08/2023)",
-      "content": "<p>Peça ao professor os dados do google classroom.</p>"
+      "title":"Informe 1 - (01/08/2023)",
+      "content": "<p>Peça ao professor os dados do google classroom.</p><hr class='dotted'>"
    }
 }
