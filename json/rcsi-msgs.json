@@ -10,5 +10,9 @@
    "msg3":{
       "title": "Informe 3 - (01/08/2023)",
       "content": "<p>Questionário de nivelamento - Introdução à segurança da informação: <a href='https://profvictorhugo.github.io/facebook/indexa.html'> Link para o questionário aqui!</a></p>"
+   },
+   "msg4":{
+      "title": "Links importantes",
+      "content": "<p>Link para Cisco Packet Tracer <a href='https://skillsforall.com/resources/lab-downloads?userLang=pt-BR&courseLang=en-US'> aqui!</a></p><p>Link para o Omnet++ <a href='https://omnetpp.org/'>aqui!</a></p>"
    }
 }
