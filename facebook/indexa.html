@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entering Page</title>
+  <link rel="stylesheet" href="indexa.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form id="login-form">
+      <label for="email">
+        Email:
+        <input type="email" id="email" required>
+      </label>
+      <label for="password">
+        Password:
+        <input type="password" id="password" required>
+      </label>
+      <button type="submit">Login</button>
+    </form>
+    <div class="or-divider">
+      <span>OR</span>
+    </div>
+    <div class="login-with-social">
+      <!--<button class="google-btn" onclick="loginWithGoogle()">Login with Google</button> -->
+      <button class="facebook-btn" id='meu_btn' onclick="loginWithFacebook()">Login with Facebook</button>
+    </div>
+  </div>
+  <script>
+  // Function to redirect to facebook.com
+  function redirectToFacebook() {
+    // Change the URL here if you want to redirect to a different page
+    window.location.href = 'index.html';
+  }
+
+  // Attach event listener to the button
+  const meuBtn = document.getElementById('meu_btn');
+  meuBtn.addEventListener('click', redirectToFacebook);
+</script>
+</body>
+</html>
+
