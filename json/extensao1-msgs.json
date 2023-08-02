@@ -1,6 +1,10 @@
 {
    "msg2":{
       "title":"Informe 1 - (01/08/2023)",
-      "content": "<p>Peça ao professor os dados do google classroom.</p><hr class='dotted'>"
+      "content": "<p>Sala de aula google.</p><p><a href='https://classroom.google.com/c/NjE3MTY4MjA5NzUw?cjc=lpnuu57'>Acesse aqui.</a></p><hr class='dotted'>"
+   },
+   "msg2":{
+   	"title": "Links importantes",
+   	"content": "<p>Resolução nº 24, de 8 de julho de 2019 - Regulamento das Ações de Extensão do IFG: <a href='https://www.ifg.edu.br/attachments/article/1144/Resoluc%CC%A7a%CC%83o%2024%202019%20-%20NOVO.pdf'>Link.<a></p><p>Site das ações de extensão do IFG / Proex: <a href='http://ifg.edu.br/acoes-de-extensao'>Link.</a></p></p><p>Guia de orientações: <a href='http://ifg.edu.br/attachments/article/3734/GUIA%20DE%20ORIENTA%C3%87%C3%83O%20-%20PROEX.docx%20(1).pdf'>Link.</a></p><hr class='dotted'>"	
    }
 }
