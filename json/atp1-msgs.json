@@ -1,10 +1,14 @@
 {
    "msg1":{
       "title":"Informe 2 - (01/08/2023)",
-      "content":"<p>Cadastre-se no URI: <a href='https://www.beecrowd.com.br/judge/pt/login'>Aqui!</a></p><a href='https://www.beecrowd.com.br/judge/pt/users/university/ifg-geral'><p>Obs 1.: a associação ao IFG é obrigatória!!</p></a><p>Obs 2.: peça ao professor os dados da disciplina no URI.</p><hr class='dotted'>"
+      "content":"<p>Cadastre-se no URI: <a href='https://www.beecrowd.com.br/judge/pt/login'>Aqui!</a></p><a href='https://www.beecrowd.com.br/judge/pt/users/university/ifg-geral'><p>Obs 1.: a associação ao IFG é obrigatória!!</p></a><p>Obs 2.: Dados da disciplina no URI: <ul><li>DISCIPLINA ATP1, ID 11149</li><li>Chave de acesso: nEolgpQ</li><li>Crie a sua conta e acesse-a; Vá ao link <a href='https://www.beecrowd.com.br/judge/pt/disciplines'>disciplinas</a> e clique em 'Acessar Disciplina', no canto superior direito; digite o id da disciplina (11149), a chave de acesso e seja feliz (!)</li></ul></p><hr class='dotted'>"
    },
    "msg2":{
       "title":"Informe 1 - (01/08/2023)",
-      "content": "<p>Peça ao professor os dados do google classroom.</p><hr class='dotted'>"
+      "content": "<p>Dados para acesso à sala de aulas google: </p><a href='https://classroom.google.com/c/NjE2NjQ3OTM3NzU3?cjc=4kmkloy'>Link</a><hr class='dotted'>"
+   },
+   "msg3":{
+      "title":"Links",
+      "content": "<hr class='dotted'>"
    }
 }
